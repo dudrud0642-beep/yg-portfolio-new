@@ -1,12 +1,12 @@
 /* 이영경 포트폴리오 (2026 리뉴얼) */
 /* 기본 한글 → Pretendard, 포인트 한글 → IBM Plex Sans KR, 영문/숫자 → IBM Plex Sans KR 라틴 (unicode-range로 분리) */
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Regular.page.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Medium.page.woff2") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-SemiBold.page.woff2") format("woff2");font-weight:600;font-display:swap}
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Bold.page.woff2") format("woff2");font-weight:700;font-display:swap}
-@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Medium.page.woff2") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-SemiBold.page.woff2") format("woff2");font-weight:600;font-display:swap}
-@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Bold.page.woff2") format("woff2");font-weight:700 800;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Regular.page.woff2?v=261019") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Medium.page.woff2?v=261019") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-SemiBold.page.woff2?v=261019") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Bold.page.woff2?v=261019") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Medium.page.woff2?v=261019") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-SemiBold.page.woff2?v=261019") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Bold.page.woff2?v=261019") format("woff2");font-weight:700 800;font-display:swap}
 @font-face{font-family:"PlexLatin";src:url("../fonts/IBMPlexSansKR-Regular.latin.woff2") format("woff2");font-weight:300 400;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
 @font-face{font-family:"PlexLatin";src:url("../fonts/IBMPlexSansKR-Medium.latin.woff2") format("woff2");font-weight:500;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
 @font-face{font-family:"PlexLatin";src:url("../fonts/IBMPlexSansKR-SemiBold.latin.woff2") format("woff2");font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
@@ -18,7 +18,7 @@
    타입 스케일: eyebrow 12 · small 14 · body 16 · desc 16~18 · h3 24~34 · display 30~60 */
 :root{
   color-scheme:dark;
-  --bg:#111111; --card:#1A1A1C; --card-2:#151517; --ink:#FFFFFF; --text2:#D6D6D9; --soft:#B4B4BA; --mute:#828289; --ink-dim:#5F5F65;
+  --bg:#111111; --card:#1A1A1C; --ink:#FFFFFF; --text2:#D6D6D9; --soft:#B4B4BA; --mute:#828289; --ink-dim:#5F5F65;
   --line:rgba(255,255,255,.12); --line-2:rgba(255,255,255,.3);
   --pink:#FFC9DC; --pink-hot:#FF6FA3; --pink-ink:#7A2347; --wine:#2B1220;
   --f-base:"PlexLatin","Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
@@ -164,38 +164,32 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.nw{white-space:no
 .steps b{font-weight:400;font-size:11px;color:var(--mute)}
 @media (max-width:420px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:14px}}
 .sc-foot{padding-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
-.btn-site{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:13px 22px;font-size:14px;font-weight:700;background:var(--pink);color:#000;transition:background .3s,transform .3s}
+.btn-site{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:10px 25px;font-size:14px;font-weight:600;background:var(--pink);color:#000;transition:background .3s,transform .3s}
 .btn-site:hover{background:#fff;transform:translateY(-1px)}
-.sc-v{container-type:inline-size;border-radius:16px;min-height:440px;overflow:hidden;display:flex;justify-content:center;align-items:flex-start;padding:clamp(28px,3.4vw,52px) clamp(24px,3vw,52px) 0;background:var(--card-2);border:1px solid var(--line)}
+/* 오른쪽 이미지·영상 영역: 상자(배경·테두리·안쪽 여백) 없이 영상만, 칸 시작선 = 세로 정렬선 */
+.sc-v{container-type:inline-size;min-width:0;display:flex;justify-content:center;align-items:center}
 .sc-tools{margin:24px 0 0;display:grid;gap:8px}
 .sc-tools > div{display:grid;grid-template-columns:56px minmax(0,1fr);gap:12px;align-items:baseline}
 .sc-tools dt{font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
 .sc-tools dd{margin:0;font-size:13.5px;color:var(--soft);letter-spacing:.01em}
 .sc-tools .ai dd{color:var(--pink)}
-.sc-v:has(.phones){max-height:520px}
-.sc-v:has(.phone-video){align-items:center;padding-bottom:clamp(28px,3.4vw,52px)}
 .phone-video{width:min(62%,260px);aspect-ratio:540/1168;border-radius:28px;overflow:hidden;background:#FFF9F5;border:1px solid rgba(255,255,255,.16);box-shadow:0 30px 60px -24px rgba(0,0,0,.9)}
 .phone-video video{display:block;width:100%;height:100%;object-fit:cover}
-.sc-v:has(.browser-video){align-items:center;min-height:0;padding:clamp(20px,3vw,44px)}
-@media (max-width:600px){.sc-v:has(.browser-video){padding:12px}}
-.browser-video{width:100%;max-width:680px;border-radius:12px;overflow:hidden;background:#0D0D0E;border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 60px -24px rgba(0,0,0,.9)}
+.browser-video{width:100%;border-radius:12px;overflow:hidden;background:#0D0D0E;border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 60px -24px rgba(0,0,0,.9)}
 .browser-video .bar{display:flex;align-items:center;gap:6px;height:30px;padding:0 12px;background:#202023;border-bottom:1px solid rgba(255,255,255,.08)}
 .browser-video .bar i{width:8px;height:8px;border-radius:50%;background:#3A3A3F;display:block;flex:none}
 .browser-video .bar span{margin-left:8px;flex:1;min-width:0;font-size:11px;color:var(--mute);background:#151517;border-radius:6px;padding:3px 10px;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .browser-video video{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#000}
 @media (max-width:600px){.phone-video{width:min(82%,240px);border-radius:22px}}
-.phones{display:flex;justify-content:center;align-items:flex-start;gap:clamp(12px,1.6vw,22px);width:100%}
-.phones img{display:block;width:min(44%,250px);height:auto;border-radius:22px;border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 60px -24px rgba(0,0,0,.9)}
-.phones img + img{margin-top:clamp(28px,3vw,48px)}
-.sc-v .mk{font-size:min(14.5px,3.1cqw);max-width:36em;border-bottom-left-radius:0;border-bottom-right-radius:0;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 30px 60px -20px rgba(0,0,0,.9)}
-@media (max-width:900px){.sc{position:relative;top:auto;grid-template-columns:minmax(0,1fr)}.sc-v{min-height:300px}}
+.sc-v .mk{font-size:min(14.5px,3.1cqw);max-width:36em;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 30px 60px -20px rgba(0,0,0,.9)}
+@media (max-width:900px){.sc{position:relative;top:auto;grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- AI Lab ---------- */
 .seg{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px}
 .seg button{border:0;background:transparent;border-radius:10px;padding:10px 18px;font-size:var(--fs-small);font-weight:600;cursor:pointer;color:var(--soft)}
 .seg button[aria-selected="true"]{background:var(--pink);color:#000}
-/* 태블릿·모바일: 탭이 여러 줄로 쌓이지 않도록 한 줄 가로 스크롤 */
-@media (max-width:900px){.seg{display:flex;flex-wrap:nowrap;max-width:100%;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.seg::-webkit-scrollbar{display:none}.seg button{flex:none;padding:10px 16px}}
+/* 탭 6개가 한 줄에 다 들어가지 않는 폭(1023px 이하): 여러 줄로 쌓이지 않도록 한 줄 가로 스크롤 */
+@media (max-width:1023px){.seg{display:flex;flex-wrap:nowrap;max-width:100%;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.seg::-webkit-scrollbar{display:none}.seg button{flex:none;padding:10px 16px}}
 .lab{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:12px}
 @media (max-width:1100px){.lab{grid-template-columns:minmax(0,1fr)}}
 .cmp{--pos:50%;position:relative;aspect-ratio:16/10;max-width:100%;border-radius:20px;overflow:hidden;background:var(--card);border:1px solid var(--line);user-select:none;-webkit-user-select:none;touch-action:pan-y;cursor:ew-resize;container-type:inline-size}
