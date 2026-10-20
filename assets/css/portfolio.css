@@ -70,6 +70,8 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .head-p{max-width:560px;color:var(--text2);font-size:var(--fs-desc);line-height:1.8}
 @media (max-width:900px){.head{grid-template-columns:minmax(0,1fr);align-items:start}}
 .head.stacked{grid-template-columns:minmax(0,1fr);align-items:start;row-gap:22px}
+/* 아이패드 세로(601~900px): 상자는 두고 바깥 여백·섹션 여백만 줄임 (카드 안쪽 등은 AI Lab 규칙 뒤에) */
+@media (min-width:601px) and (max-width:900px){:root{--pad:32px;--sec:72px;--head-gap:36px}}
 /* 휴대폰: 섹션 위아래·제목 아래 여백을 줄여 덜 길게 */
 @media (max-width:600px){
   :root{--pad:18px;--hd-h:56px;--sec:64px;--head-gap:32px;--fs-body:15px;--fs-desc:15px;--fs-small:13px;--fs-h3:22px}
@@ -251,6 +253,8 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 @media (max-width:480px){.mcols{grid-template-columns:minmax(0,1fr)}}
 /* 휴대폰: 비교 화면 아래 설명은 상자 없이 바로 이어서 */
 @media (max-width:600px){.lab{gap:28px}.memo{padding:0;background:none;border:0;border-radius:0;gap:16px}.memo h3{font-size:20px}}
+/* 아이패드 세로: 경력·벤토 위 여백과 카드·설명 상자 안쪽 여백 */
+@media (min-width:601px) and (max-width:900px){.career{margin-top:60px}.bento{margin-top:52px}.sc,.memo{padding:28px}}
 
 /* ---------- index ---------- */
 .rows{border-top:1px solid var(--line-2)}
