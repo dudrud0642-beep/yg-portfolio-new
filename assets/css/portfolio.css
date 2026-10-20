@@ -69,6 +69,8 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .head-p{max-width:560px;color:var(--text2);font-size:var(--fs-desc);line-height:1.8}
 @media (max-width:900px){.head{grid-template-columns:minmax(0,1fr);align-items:start}}
 .head.stacked{grid-template-columns:minmax(0,1fr);align-items:start;row-gap:22px}
+/* 휴대폰: 섹션 위아래·제목 아래 여백을 줄여 덜 길게 */
+@media (max-width:600px){:root{--sec:64px;--head-gap:32px}.sec.first{padding-top:calc(var(--hd-h) + 44px)}}
 .head.stacked .head-p{max-width:780px}
 /* 글자 크기: 섹션 설명 · About 소개 · Contact 안내 = --fs-desc(16~18px), AI Works 카드 설명 · AI Lab 작업 설명 = Career 상세 내용과 같은 본문 16px */
 
@@ -145,7 +147,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .tgroups dd{margin:0;display:flex;flex-wrap:wrap;gap:6px}
 .tgroups span{font-size:13px;padding:6px 11px;border-radius:8px;background:rgba(255,255,255,.08);color:#E2E2E2}
 @media (max-width:1100px){.bento{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:600px){.bento{grid-template-columns:minmax(0,1fr)}.bento > .t{grid-column:1/-1;min-height:0}.fsteps{grid-template-columns:1fr}}
+@media (max-width:600px){.career{margin-top:56px}.bento{grid-template-columns:minmax(0,1fr);margin-top:48px}.bento > .t{grid-column:1/-1;min-height:0}.fsteps{grid-template-columns:1fr}}
 
 /* ---------- AI works ---------- */
 .stack{display:flex;flex-direction:column;gap:24px}
@@ -159,7 +161,6 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .steps{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;max-width:32em}
 .steps > li{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:500;color:#D2CDD0;padding-top:10px;border-top:1px solid rgba(255,255,255,.2)}
 .steps b{font-weight:400;font-size:11px;color:var(--mute)}
-@media (max-width:420px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:14px}}
 .sc-foot{padding-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
 .btn-site{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:10px 25px;font-size:14px;font-weight:600;background:var(--pink);color:#000;transition:background .3s,transform .3s}
 .btn-site:hover{background:#fff;transform:translateY(-1px)}
@@ -177,8 +178,18 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .browser-video .bar i{width:8px;height:8px;border-radius:50%;background:#3A3A3F;display:block;flex:none}
 .browser-video .bar span{margin-left:8px;flex:1;min-width:0;font-size:11px;color:var(--mute);background:#151517;border-radius:6px;padding:3px 10px;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .browser-video video{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#000}
-@media (max-width:600px){.phone-video{width:min(82%,240px);border-radius:22px}}
+@media (max-width:600px){.phone-video{width:min(66%,220px);border-radius:22px}}
 @media (max-width:900px){.sc{position:relative;top:auto;grid-template-columns:minmax(0,1fr)}}
+/* 휴대폰: 카드 상자(배경·테두리·안쪽 여백) 없이 가는 줄로만 나눔 */
+@media (max-width:600px){
+  .stack{gap:0}
+  .sc{--sc-gap:24px;padding:36px 0;background:none;border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none}
+  .sc:first-child{border-top:0;padding-top:0}
+  .sc:last-child{padding-bottom:0}
+  .sc h3{margin-top:12px}
+  .steps{margin-top:28px}
+  .sc-foot{padding-top:24px}
+}
 
 /* ---------- AI Lab ---------- */
 .seg{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px}
@@ -219,6 +230,8 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .mcols li::before{content:"";position:absolute;left:0;top:calc(.9em - 2px);width:4px;height:4px;border-radius:50%;background:currentColor}
 .memo .btn-site{align-self:flex-start;margin-top:auto}
 @media (max-width:480px){.mcols{grid-template-columns:minmax(0,1fr)}}
+/* 휴대폰: 비교 화면 아래 설명은 상자 없이 바로 이어서 */
+@media (max-width:600px){.lab{gap:28px}.memo{padding:0;background:none;border:0;border-radius:0;gap:16px}}
 
 /* ---------- index ---------- */
 .rows{border-top:1px solid var(--line-2)}
@@ -278,7 +291,7 @@ a.cc.cc-pink{background:var(--pink);color:#000;border-color:transparent}
 .cc-pink .arr{color:#000}
 a.cc.cc-pink:hover{background:#fff}
 a.cc.cc-pink:hover .arr{color:#000}
-.wordmark{display:block;width:100%;height:auto;margin-top:clamp(80px,10vw,140px)}
+.wordmark{display:block;width:100%;height:auto;margin-top:clamp(56px,10vw,140px)}
 .wordmark text{font-family:var(--f-base);font-weight:700}
 .meta{margin-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px 24px;font-size:12px;color:var(--mute);letter-spacing:.04em}
 .top{border:1px solid var(--line);background:transparent;color:var(--soft);border-radius:999px;padding:9px 16px;font-size:12px;cursor:pointer}
