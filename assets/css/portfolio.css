@@ -58,6 +58,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .gnb button:hover,.gnb button.on{color:var(--ink)}
 .hd-cta{border:0;cursor:pointer;background:var(--pink);color:#000;border-radius:999px;padding:10px 18px;font-size:13px;font-weight:700;white-space:nowrap}
 @media (max-width:820px){.gnb{display:none}.hd-cta{margin-left:auto}}
+@media (max-width:600px){.logo{font-size:16px}.hd-cta{padding:8px 15px;font-size:12.5px}}
 
 /* ---------- section system ---------- */
 .sec{padding-block:var(--sec);border-top:1px solid var(--line);scroll-margin-top:var(--hd-h)}
@@ -70,7 +71,11 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 @media (max-width:900px){.head{grid-template-columns:minmax(0,1fr);align-items:start}}
 .head.stacked{grid-template-columns:minmax(0,1fr);align-items:start;row-gap:22px}
 /* 휴대폰: 섹션 위아래·제목 아래 여백을 줄여 덜 길게 */
-@media (max-width:600px){:root{--sec:64px;--head-gap:32px}.sec.first{padding-top:calc(var(--hd-h) + 44px)}}
+@media (max-width:600px){
+  :root{--pad:18px;--hd-h:56px;--sec:64px;--head-gap:32px;--fs-body:15px;--fs-desc:15px;--fs-small:13px;--fs-h3:22px}
+  .sec.first{padding-top:calc(var(--hd-h) + 44px)}
+  .head-p,.contact-sub,.about-txt p,.sc-desc,.memo > p{line-height:1.75}
+}
 .head.stacked .head-p{max-width:780px}
 /* 글자 크기: 섹션 설명 · About 소개 · Contact 안내 = --fs-desc(16~18px), AI Works 카드 설명 · AI Lab 작업 설명 = Career 상세 내용과 같은 본문 16px */
 
@@ -164,6 +169,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .sc-foot{padding-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
 .btn-site{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:10px 25px;font-size:14px;font-weight:600;background:var(--pink);color:#000;transition:background .3s,transform .3s}
 .btn-site:hover{background:#fff;transform:translateY(-1px)}
+@media (max-width:600px){.btn-site{padding:8px 18px;font-size:13px;gap:8px}.sc-tools dd{font-size:13px}}
 /* 오른쪽 이미지·영상 영역: 상자(배경·테두리·안쪽 여백) 없이 영상만, 칸 시작선 = 세로 정렬선 */
 .sc-v{container-type:inline-size;min-width:0;display:flex;justify-content:center;align-items:center}
 .sc-tools{margin:24px 0 0;display:grid;gap:8px}
@@ -179,7 +185,13 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .browser-video .bar span{margin-left:8px;flex:1;min-width:0;font-size:11px;color:var(--mute);background:#151517;border-radius:6px;padding:3px 10px;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .browser-video video{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#000}
 @media (max-width:600px){.phone-video{width:min(66%,220px);border-radius:22px}}
-@media (max-width:900px){.sc{position:relative;top:auto;grid-template-columns:minmax(0,1fr)}}
+/* 카드가 한 줄로 쌓이는 화면: 글 → 영상 → 사이트 보기 버튼 순서로 (글 칸을 풀어 버튼만 영상 뒤로 보냄) */
+@media (max-width:900px){
+  .sc{position:relative;top:auto;display:flex;flex-direction:column;gap:0}
+  .sc-t{display:contents}
+  .sc-v{order:1;margin-top:var(--sc-gap)}
+  .sc-foot{order:2}
+}
 /* 휴대폰: 카드 상자(배경·테두리·안쪽 여백) 없이 가는 줄로만 나눔 */
 @media (max-width:600px){
   .stack{gap:0}
@@ -197,6 +209,13 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .seg button[aria-selected="true"]{background:var(--pink);color:#000}
 /* 태블릿·모바일: 탭이 여러 줄로 쌓이지 않도록 한 줄 가로 스크롤 */
 @media (max-width:900px){.seg{display:flex;flex-wrap:nowrap;max-width:100%;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.seg::-webkit-scrollbar{display:none}.seg button{flex:none;padding:10px 16px}}
+/* 휴대폰: 옆으로 밀어야 보이던 탭 대신 2열 버튼으로 모두 보이게 */
+@media (max-width:600px){
+  .seg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:0;overflow:visible;background:none;border:0;border-radius:0}
+  .seg button{white-space:normal;text-wrap:balance;line-height:1.35;padding:11px 10px;font-size:14px;color:var(--text2);background:var(--card);border:1px solid var(--line);border-radius:10px}
+  .seg button[aria-selected="true"]{background:var(--pink);border-color:var(--pink);color:#000}
+  .seg button:last-child:nth-child(odd){grid-column:1/-1}
+}
 .lab{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:12px}
 @media (max-width:1100px){.lab{grid-template-columns:minmax(0,1fr)}}
 .cmp{--pos:50%;position:relative;aspect-ratio:16/10;max-width:100%;border-radius:20px;overflow:hidden;background:var(--card);border:1px solid var(--line);user-select:none;-webkit-user-select:none;touch-action:pan-y;cursor:ew-resize;container-type:inline-size}
@@ -231,7 +250,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .memo .btn-site{align-self:flex-start;margin-top:auto}
 @media (max-width:480px){.mcols{grid-template-columns:minmax(0,1fr)}}
 /* 휴대폰: 비교 화면 아래 설명은 상자 없이 바로 이어서 */
-@media (max-width:600px){.lab{gap:28px}.memo{padding:0;background:none;border:0;border-radius:0;gap:16px}}
+@media (max-width:600px){.lab{gap:28px}.memo{padding:0;background:none;border:0;border-radius:0;gap:16px}.memo h3{font-size:20px}}
 
 /* ---------- index ---------- */
 .rows{border-top:1px solid var(--line-2)}
@@ -253,6 +272,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 }
 @media (max-width:760px){
   .row{grid-template-columns:72px minmax(0,1fr) 18px;gap:16px;padding:18px 0}
+  .row .tt b{font-size:16px}
   .row:hover{padding-left:0}
   .row .no,.row .cat,.row .dom{display:none}
   .mini{display:block}
