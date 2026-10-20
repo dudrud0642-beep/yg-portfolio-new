@@ -41,11 +41,9 @@ a{color:inherit;text-decoration:none}
 :focus-visible{outline:2px solid var(--pink);outline-offset:3px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .wrap{width:min(var(--max),calc(100% - 2 * var(--pad)));margin-inline:auto}
-/* 한국어 줄바꿈: 단어 단위(keep-all) · 긴 URL은 줄바꿈 허용 · 제목은 balance · 본문은 pretty · 버튼/칩은 한 줄 */
+/* 한국어 줄바꿈: 단어 단위(keep-all) · 긴 URL은 줄바꿈 허용 · 짧은 제목만 줄 길이를 고르게(balance) · 버튼/칩은 한 줄
+   문단·목록에는 balance/pretty를 쓰지 않는다 — 특히 아이폰 Safari에서 줄을 일찍 넘겨 오른쪽이 비어 보임 */
 h1,h2,h3,h4,.disp{text-wrap:balance}
-p,li,dd{text-wrap:pretty}
-/* 1~2줄짜리 짧은 설명은 줄 길이를 고르게 */
-.head-p,.contact-sub,.about-txt strong{text-wrap:balance}
 button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{white-space:nowrap}
 
 /* ---------- header ---------- */
@@ -118,7 +116,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .job-who h4{font-family:var(--f-point);font-weight:600;font-size:clamp(20px,1.7vw,26px);letter-spacing:-.03em;line-height:1.3}
 .job-who p{margin-top:6px;font-size:14px;color:var(--soft)}
 .job-did{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;max-width:760px}
-.job-did li{text-wrap:balance;position:relative;padding-left:18px;color:var(--text2);font-size:var(--fs-body);line-height:1.75}
+.job-did li{position:relative;padding-left:18px;color:var(--text2);font-size:var(--fs-body);line-height:1.75}
 .job-did li::before{content:"";position:absolute;left:0;top:.8em;width:8px;height:1px;background:var(--ink)}
 @media (max-width:1100px){.job-meta{grid-template-columns:minmax(0,1fr);gap:10px}}
 @media (max-width:900px){.job{grid-template-columns:minmax(0,1fr)}}
@@ -163,7 +161,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .sc-t{display:flex;flex-direction:column;min-width:0;padding-block:6px}
 .sc-meta{display:flex;align-items:center;gap:12px}
 .sc h3{font-family:var(--f-point);font-size:var(--fs-h3);font-weight:600;letter-spacing:-.035em;line-height:1.25;margin-top:20px}
-.sc-desc{text-wrap:pretty;color:var(--text2);font-size:var(--fs-body);line-height:1.85;margin-top:16px}
+.sc-desc{color:var(--text2);font-size:var(--fs-body);line-height:1.85;margin-top:16px}
 /* 시안 B의 1 Prompt · 2 Design · 3 Code · 4 Launch 라인 */
 .steps{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;max-width:32em}
 .steps > li{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:500;color:#D2CDD0;padding-top:10px;border-top:1px solid rgba(255,255,255,.2)}
@@ -247,7 +245,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .mcols > div.me{background:var(--pink);color:#000}
 .mcols h4{font-size:var(--fs-small);font-weight:700;margin-bottom:8px}
 .mcols ul{margin:0;padding:0;list-style:none;font-size:var(--fs-small);line-height:1.8}
-.mcols li{position:relative;padding-left:10px;text-wrap:balance}
+.mcols li{position:relative;padding-left:10px}
 .mcols li::before{content:"";position:absolute;left:0;top:calc(.9em - 2px);width:4px;height:4px;border-radius:50%;background:currentColor}
 .memo .btn-site{align-self:flex-start;margin-top:auto}
 @media (max-width:480px){.mcols{grid-template-columns:minmax(0,1fr)}}
