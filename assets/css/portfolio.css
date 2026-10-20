@@ -190,7 +190,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
   .sc{position:relative;top:auto;display:flex;flex-direction:column;gap:0}
   .sc-t{display:contents}
   .sc-v{order:1;margin-top:var(--sc-gap)}
-  .sc-foot{order:2}
+  .sc-foot{order:2;justify-content:center}
 }
 /* 휴대폰: 카드 상자(배경·테두리·안쪽 여백) 없이 가는 줄로만 나눔 */
 @media (max-width:600px){
