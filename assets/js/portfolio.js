@@ -160,6 +160,9 @@
       : '<div class="phone-video">'+v+'</div>';
   };
   const keep=t=>t.replace(/ /g,'&nbsp;');
+  /* 마지막 줄에 낱말 하나만 남지 않게 마지막 띄어쓰기만 줄 안 넘어가는 공백으로.
+     좁은 칸(맡은 일 목록)은 붙인 두 낱말이 칸보다 길면 단어가 쪼개지므로, 합쳐 max글자 이하일 때만 */
+  const tail=(t,max=99)=>{const m=t.match(/(\S+) (\S+)$/);return m&&t.split(' ').length>2&&(m[1]+m[2]).length<=max?t.replace(/ (?=\S*$)/,'&nbsp;'):t};
   const toolList=a=>a.map(keep).join('&nbsp;· ');
   const siteBtn=w=>w.url
     ? `<a class="btn-site" href="${w.url}" target="_blank" rel="noopener">${w.btn||'사이트 보기'} <span aria-hidden="true">↗</span></a>`
@@ -169,7 +172,7 @@
       <div class="sc-t">
         <div class="sc-meta"><span class="eyebrow">${w.en}</span></div>
         <h3>${w.name}</h3>
-        <p class="sc-desc">${w.desc}</p>
+        <p class="sc-desc">${tail(w.desc)}</p>
         ${(w.tools||w.stack)?'<dl class="sc-tools">'+(w.tools?'<div class="ai"><dt>AI</dt><dd>'+toolList(w.tools)+'</dd></div>':'')+(w.stack?'<div><dt>Stack</dt><dd>'+toolList(w.stack)+'</dd></div>':'')+(w.period?'<div><dt>Period</dt><dd>'+keep(w.period)+'</dd></div>':'')+'</dl>':''}
         <ol class="steps"><li><b>1</b>Prompt</li><li><b>2</b>Design</li><li><b>3</b>Code</li><li><b>4</b>Launch</li></ol>
         ${w.url?'<div class="sc-foot">'+siteBtn(w)+'</div>':''}
@@ -222,10 +225,10 @@
     $('#memo').innerHTML=`
       <div class="sc-meta"><span class="eyebrow">${w.en}</span></div>
       <h3>${w.name}</h3>
-      <p>${w.labDesc||w.desc}</p>
+      <p>${tail(w.labDesc||w.desc)}</p>
       <div class="mcols">
-        <div class="me"><h4>내가 맡은 일</h4><ul>${w.me.map(x=>`<li>${x}</li>`).join('')}</ul></div>
-        <div><h4>AI가 맡은 일</h4><ul>${w.ai.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+        <div class="me"><h4>내가 맡은 일</h4><ul>${w.me.map(x=>`<li>${tail(x,6)}</li>`).join('')}</ul></div>
+        <div><h4>AI가 맡은 일</h4><ul>${w.ai.map(x=>`<li>${tail(x,6)}</li>`).join('')}</ul></div>
       </div>
       ${siteBtn(w)}`;
   }

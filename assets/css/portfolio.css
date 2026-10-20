@@ -41,9 +41,8 @@ a{color:inherit;text-decoration:none}
 :focus-visible{outline:2px solid var(--pink);outline-offset:3px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .wrap{width:min(var(--max),calc(100% - 2 * var(--pad)));margin-inline:auto}
-/* 한국어 줄바꿈: 단어 단위(keep-all) · 긴 URL은 줄바꿈 허용 · 짧은 제목만 줄 길이를 고르게(balance) · 버튼/칩은 한 줄
-   문단·목록에는 balance/pretty를 쓰지 않는다 — 특히 아이폰 Safari에서 줄을 일찍 넘겨 오른쪽이 비어 보임 */
-h1,h2,h3,h4,.disp{text-wrap:balance}
+/* 한국어 줄바꿈: 단어 단위(keep-all) · 긴 URL은 줄바꿈 허용 · 버튼/칩은 한 줄
+   text-wrap(balance/pretty)은 쓰지 않는다 — 아이폰 Safari에서 자리가 남아도 줄을 일찍 넘겨 어색해짐 */
 button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{white-space:nowrap}
 
 /* ---------- header ---------- */
@@ -212,7 +211,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 /* 휴대폰: 옆으로 밀어야 보이던 탭 대신 2열 버튼으로 모두 보이게 */
 @media (max-width:600px){
   .seg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:0;overflow:visible;background:none;border:0;border-radius:0}
-  .seg button{white-space:normal;text-wrap:balance;line-height:1.35;padding:11px 10px;font-size:14px;color:var(--text2);background:var(--card);border:1px solid var(--line);border-radius:10px}
+  .seg button{white-space:normal;line-height:1.35;padding:11px 10px;font-size:14px;color:var(--text2);background:var(--card);border:1px solid var(--line);border-radius:10px}
   .seg button[aria-selected="true"]{background:var(--pink);border-color:var(--pink);color:#000}
   .seg button:last-child:nth-child(odd){grid-column:1/-1}
 }
