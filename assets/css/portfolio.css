@@ -42,10 +42,8 @@ a{color:inherit;text-decoration:none}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .wrap{width:min(var(--max),calc(100% - 2 * var(--pad)));margin-inline:auto}
 /* 한국어 줄바꿈: 단어 단위(keep-all) · 긴 URL은 줄바꿈 허용 · 버튼/칩은 한 줄
-   text-wrap(balance/pretty)은 쓰지 않는다 — 아이폰 Safari에서 자리가 남아도 줄을 일찍 넘겨 어색해짐 */
+   문단에는 text-wrap(balance/pretty)·양쪽 정렬을 쓰지 않는다 — 아이폰에서 줄이 일찍 넘어가거나 낱말 사이가 벌어져 어색해짐 */
 button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{white-space:nowrap}
-/* 휴대폰·태블릿: 낱말 단위 줄바꿈이라 줄 끝이 들쭉날쭉해 보이므로 문단·경력 목록은 양쪽 정렬(마지막 줄과 굵은 첫 문장은 왼쪽) */
-@media (max-width:900px){.about-txt p,.job-did li,.head-p,.sc-desc,.memo > p,.contact-sub{text-align:justify}.about-txt strong{text-align:left}}
 
 /* ---------- header ---------- */
 .hd{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:rgba(17,17,17,.95);border-bottom:1px solid var(--line)}
@@ -238,6 +236,13 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .handle span{position:absolute;top:50%;left:50%;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;font-size:14px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .handle:focus-visible{outline:none}
 .handle:focus-visible span{outline:2px solid var(--pink);outline-offset:3px}
+/* 휴대폰: 비교 화면을 살짝 어둡게 깔아 두고(라벨·손잡이는 그대로), 손으로 끌면 밝아짐 */
+@media (max-width:600px){
+  .before::after,.after::after{content:"";position:absolute;inset:0;z-index:1;background:rgba(0,0,0,.38);pointer-events:none;transition:opacity .45s var(--ease)}
+  .after{z-index:1}
+  .cmp.lit .before::after,.cmp.lit .after::after{opacity:0}
+  .handle{z-index:3}
+}
 .memo{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(24px,2.6vw,36px);display:flex;flex-direction:column;gap:18px;min-width:0}
 .memo h3{font-family:var(--f-point);font-size:clamp(22px,1.8vw,28px);font-weight:600;letter-spacing:-.03em}
 .memo > p{color:var(--text2);font-size:var(--fs-body);line-height:1.85}
