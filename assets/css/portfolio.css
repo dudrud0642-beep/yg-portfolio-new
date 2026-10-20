@@ -207,7 +207,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .seg button{border:0;background:transparent;border-radius:10px;padding:10px 18px;font-size:var(--fs-small);font-weight:600;cursor:pointer;color:var(--soft)}
 .seg button[aria-selected="true"]{background:var(--pink);color:#000}
 /* 태블릿·모바일: 탭이 여러 줄로 쌓이지 않도록 한 줄 가로 스크롤 */
-@media (max-width:900px){.seg{display:flex;flex-wrap:nowrap;max-width:100%;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.seg::-webkit-scrollbar{display:none}.seg button{flex:none;padding:10px 16px}}
+@media (max-width:900px){.seg{display:flex;flex-wrap:nowrap;max-width:100%;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.seg::-webkit-scrollbar{display:none}.seg button{flex:none;padding:10px 12px}}
 /* 휴대폰: 옆으로 밀어야 보이던 탭 대신 2열 버튼으로 모두 보이게 */
 @media (max-width:600px){
   .seg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:0;overflow:visible;background:none;border:0;border-radius:0}
@@ -302,8 +302,8 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .contact .disp{font-size:clamp(32px,3.5vw,54px);font-family:var(--f-base);font-weight:500;letter-spacing:-.05em;line-height:1.1}
 .contact .disp .lt{font-weight:300}
 .contact-sub{margin-top:24px;max-width:520px;color:var(--text2);font-size:var(--fs-desc);line-height:1.8}
-.cc-list{display:flex;flex-direction:column;gap:10px;min-width:0;width:100%;max-width:620px;justify-self:end}
-@media (max-width:900px){.cc-list{max-width:none;justify-self:stretch}}
+/* 연락처 카드는 다른 섹션의 오른쪽 칸과 같은 선에서 시작하고 끝남 */
+.cc-list{display:flex;flex-direction:column;gap:10px;min-width:0;width:100%}
 .cc{display:grid;grid-template-columns:104px minmax(0,1fr) auto;align-items:center;gap:12px 18px;padding:22px 24px;border-radius:16px;background:var(--card);border:1px solid var(--line);transition:border-color .3s}
 .cc .tl{color:var(--soft);white-space:nowrap}
 .cc-val{font-family:var(--f-point);font-size:clamp(17px,1.4vw,20px);font-weight:600;letter-spacing:-.02em;min-width:0;overflow-wrap:anywhere}
