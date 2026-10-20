@@ -177,12 +177,18 @@
       <div class="sc-v">${visual(w)}</div>
     </article>`).join('');
 
+  /* 카드 높이를 CSS(--h)에 넘겨, 화면보다 큰 카드도 아래쪽까지 다 보이고 나서 고정되게 */
+  const stackCards=$$('#stack .sc');
+  const setH=c=>c.style.setProperty('--h',c.offsetHeight+'px');
+  if('ResizeObserver' in window){const ro=new ResizeObserver(es=>es.forEach(e=>setH(e.target)));stackCards.forEach(c=>ro.observe(c))}
+  else{const all=()=>stackCards.forEach(setH);all();addEventListener('resize',all)}
+
   /* 영상: 카드가 겹쳐 쌓이므로 맨 위에 보이는 카드의 영상 하나만 재생 (여러 개를 동시에 디코딩하면 버벅임)
      움직임 줄이기 설정이면 자동재생 대신 재생 버튼 */
   const vids=$$('.sc-v video');
   if(RM) vids.forEach(v=>{v.controls=true});
   else if(vids.length){
-    const cards=$$('#stack .sc');
+    const cards=stackCards;
     let vTick=false, inView=false;
     const pick=()=>{
       vTick=false;

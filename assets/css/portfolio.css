@@ -149,7 +149,8 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 
 /* ---------- AI works ---------- */
 .stack{display:flex;flex-direction:column;gap:24px}
-.sc{--sc-gap:clamp(28px,4vw,64px);position:sticky;top:calc(var(--hd-h) + 24px + var(--i) * 18px);display:grid;grid-template-columns:calc(50% + 6px - var(--sc-gap)) minmax(0,1fr);gap:var(--sc-gap);padding:clamp(24px,3vw,48px);border-radius:24px;background:var(--card);border:1px solid var(--line);box-shadow:0 -24px 60px -24px rgba(0,0,0,.9)}
+/* 겹쳐 쌓이는 카드: 화면보다 키가 큰 카드는 아래쪽 끝까지 올라온 뒤 멈추도록 고정 위치를 위로 당김(--h는 JS가 넣는 카드 높이) */
+.sc{--sc-gap:clamp(28px,4vw,64px);position:sticky;top:min(calc(var(--hd-h) + 24px + var(--i) * 18px), calc(100vh - var(--h, 0px) - 16px));display:grid;grid-template-columns:calc(50% + 6px - var(--sc-gap)) minmax(0,1fr);gap:var(--sc-gap);padding:clamp(24px,3vw,48px);border-radius:24px;background:var(--card);border:1px solid var(--line);box-shadow:0 -24px 60px -24px rgba(0,0,0,.9)}
 .sc-t{display:flex;flex-direction:column;min-width:0;padding-block:6px}
 .sc-meta{display:flex;align-items:center;gap:12px}
 .sc h3{font-family:var(--f-point);font-size:var(--fs-h3);font-weight:600;letter-spacing:-.035em;line-height:1.25;margin-top:20px}
@@ -200,6 +201,8 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .lbl{position:absolute;top:16px;z-index:2;font-size:13px;font-weight:600;letter-spacing:.02em;padding:5px 11px;border-radius:999px}
 .lbl.l{left:16px;color:var(--pink);background:rgba(17,17,17,.78)}
 .lbl.r{right:16px;color:#000;font-weight:700;background:var(--pink)}
+/* 좁은 휴대폰: 왼쪽·오른쪽 라벨이 서로 닿지 않게 조금 작게 */
+@media (max-width:420px){.lbl{top:10px;font-size:12px;padding:4px 8px}.lbl.l{left:10px}.lbl.r{right:10px}}
 .handle{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;margin-left:-1px;background:#fff}
 .handle span{position:absolute;top:50%;left:50%;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;font-size:14px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .handle:focus-visible{outline:none}
