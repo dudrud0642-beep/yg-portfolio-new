@@ -37,34 +37,34 @@
      url: 사이트를 완성하면 주소를 넣으세요. 주소가 있는 작업에만 "사이트 보기" 버튼이 생깁니다.
      video: 카드 오른쪽 화면 녹화. frame:"browser"면 데스크톱 창 모양, 없으면 휴대폰 모양.
      lab: AI Lab 비교 이미지(before/after). wide는 가로형 데스크톱 화면이며 비교 영역 비율을 w:h에 맞춥니다.
-     period: 작업 기간(카드의 Period 줄) — [달력 기간, 실제 작업한 날 수]. GitHub 커밋 날짜와 어긋나지 않게.
+     period: 작업 기간(카드의 Period 줄). GitHub 커밋 날짜와 어긋나지 않게.
      ai / me: AI Lab 설명 상자의 "AI가 맡은 일 / 내가 맡은 일" 목록입니다. */
   const AI=[
     {k:"moa",name:"모아놀자",en:"Web Platform",url:"https://dudrud0642-beep.github.io/kids_program_portfolio/",
-     desc:"친구가 아이와 갈 프로그램을 찾으려고 도서관, 구청, 문화재단 사이트를 하나씩 들어가 보는 모습을 보고 시작했습니다. 흩어진 프로그램을 한 화면에서 볼 수 있도록 스크롤을 길게 내리는 페이지 대신 대시보드 형식으로 만들고, 흰 배경에 노란 포인트로 밝고 읽기 쉽게 잡았습니다. 기관 공식 공지에서 모은 실제 정보만 넣었고, 서울 25개 구의 공공예약 정보는 매일 아침 자동으로 갱신됩니다. 앞으로 다른 구의 도서관·문화재단 소식까지 모아 실제 서비스로 운영할 계획입니다.",
+     desc:"친구가 아이와 갈 프로그램을 찾으려고 도서관, 구청, 문화재단 사이트를 하나씩 들어가 보는 모습을 보고 시작했습니다. 흩어진 프로그램을 한 화면에서 볼 수 있도록 스크롤을 길게 내리는 페이지 대신 대시보드 형식으로 만들고, 흰 배경에 노란 포인트로 밝고 읽기 쉽게 잡았습니다. 기관 공식 공지에서 모은 실제 정보만 넣었고, 서울 25개 자치구의 공공예약 정보는 매일 아침 자동으로 갱신됩니다. 앞으로 다른 구의 도서관과 문화재단 소식까지 모아 실제 서비스로 운영할 계획입니다.",
      tools:["Cursor","Claude Code"],
      stack:["HTML","CSS","JavaScript","Open API","GitHub","Vercel"],
-     period:["2026.10.13 – 10.19","작업 4일"],
+     period:"2026.10.13 – 10.19",
      video:{src:"assets/images/ai-moa-demo.mp4",poster:"assets/images/ai-moa-poster.jpg",frame:"browser",host:"dudrud0642-beep.github.io/kids_program_portfolio",label:"모아놀자 대시보드에서 프로그램을 찾아보는 화면 녹화"},
      lab:{before:"assets/images/ai-moa-v0-first.webp",after:"assets/images/ai-moa-final.webp",l:"AI 첫 결과 · 10/13",r:"완성 · 10/19",alt:"모아놀자 도봉구 대시보드 첫 화면",wide:true,w:1536,h:864},
-     labDesc:"처음 결과는 샘플 데이터를 넣은 평범한 검색·목록 페이지라, 스크롤을 한참 내려야 하고 다른 사이트와 다른 점이 없었습니다. 그래서 지도와 요약 숫자, 2주 일정이 한 화면에 보이는 대시보드로 방향을 바꾸고, 기관 공지에서 모은 실제 프로그램으로 채웠습니다. 주색과 로고, 글자 굵기, 지도 표현도 하나씩 다시 정했고, 휴대폰과 태블릿에서도 편하게 쓰이는지 직접 써 보며 수정을 요청했습니다.",
+     labDesc:"처음 결과는 샘플 데이터를 넣은 평범한 목록형 페이지라, 스크롤을 한참 내려야 하고 다른 사이트와 다른 점이 없었습니다. 그래서 지도와 요약 숫자, 2주 일정이 한 화면에 보이는 대시보드로 방향을 바꾸고, 기관 공지에서 모은 실제 프로그램으로 채웠습니다. 주색과 로고, 글자 굵기, 지도 표현도 하나씩 다시 정했고, 휴대폰과 태블릿에서도 편하게 쓰이는지 직접 써 보며 수정을 요청했습니다.",
      ai:["기관별 프로그램 수집과 데이터 정리","콘셉트에 맞춘 대시보드 디자인","HTML·CSS·JS 퍼블리싱","자동 갱신 기능 개발","반응형 점검과 오류 수정"],
      me:["서비스 아이디어와 기획","디자인 콘셉트와 대시보드 형식 결정","로고·주색·폰트 시안 선택","실제 기관 정보만 쓰는 데이터 기준","모바일·태블릿 사용성 검수와 수정 요청","최종 결과물 검수"]},
     {k:"simmons",name:"SIMMONS 사이트 리뉴얼",en:"Brand Website",url:"https://dudrud0642-beep.github.io/simmons_portfolio/",
      desc:"기존 SIMMONS 공식몰이 흰 배경이라, 블랙 콘셉트의 모던하고 심플한 느낌으로 리뉴얼 방향을 잡았습니다. 글이 잘 읽히고 깔끔해 보이는 것을 가장 먼저 생각했고, 제품을 소개하는 섹션은 화면을 넓게 써서 큼직하게 보여 주고 싶었습니다. 글로만 되어 있던 게시판과 매장 안내는 카드로 바꿔 보기 편하게 정리했습니다. SIMMONS를 주제로 한 비공식 리뉴얼 작업입니다.",
      tools:["Cursor","Claude Code","Codex"],
      stack:["HTML","CSS","JavaScript","GitHub","Vercel"],
-     period:["2026.10.06 – 10.08","작업 3일"],
+     period:"2026.10.06 – 10.08",
      video:{src:"assets/images/ai-simmons-demo.mp4",poster:"assets/images/ai-simmons-poster.jpg",frame:"browser",host:"dudrud0642-beep.github.io/simmons_portfolio",label:"SIMMONS 리뉴얼 사이트를 위에서 아래로 내려 보는 화면 녹화"},
      lab:{before:"assets/images/ai-simmons-v0-art.jpg",after:"assets/images/ai-simmons-final.jpg",l:"AI 첫 버전 · 10/6",r:"피드백 반영 후 · 10/7",alt:"SIMMONS 리뉴얼 THE ART OF GOOD SLEEP 섹션",wide:true,w:1440,h:900},
-     labDesc:"AI가 처음 만든 버전은 기본 구성은 갖췄지만, 화면이 비어 보이고 글자 크기와 여백이 제각각이었습니다. 섹션마다 디자인 방향을 정해 구성을 바꾸고, 제목 굵기와 폰트 크기, 여백, 반응형을 하나씩 짚어 가며 지금 모습으로 다듬었습니다. 비교 화면의 THE ART OF GOOD SLEEP 섹션은 세 가지 기준이 한 화면에 보이도록 구성을 새로 잡은 부분입니다.",
+     labDesc:"AI가 처음 만든 버전은 기본 구성은 갖췄지만, 화면이 비어 보이고 글자 크기와 여백이 제각각이었습니다. 섹션마다 디자인 방향을 정해 구성을 바꾸고, 제목 굵기와 폰트 크기, 여백, 반응형을 하나씩 짚어 가며 지금 모습으로 다듬었습니다. 비교 화면의 THE\u00a0ART\u00a0OF GOOD\u00a0SLEEP 섹션은 세 가지 기준이 한 화면에 보이도록 구성을 새로 잡은 부분입니다.",
      ai:["섹션 구성과 레이아웃 초안","방향에 맞춘 화면 디자인","HTML·CSS·JS 퍼블리싱","피드백 반영과 반응형 수정","이미지 압축과 코드 정리"],
      me:["콘셉트 결정과 프롬프트 작성","레퍼런스 리서치와 디자인 방향 설정","폭·여백·폰트 기준 수립과 디테일 검수","제품·공간 이미지 선정","디자인 수정 요청과 반복 피드백","최종 결과물 검수"]},
     {k:"sdetail",name:"SIMMONS 상세페이지",en:"Detail Page",url:"https://dudrud0642-beep.github.io/portfolio_detail_pages/simmons/",
      desc:"단순히 정보를 나열하는 상세페이지가 아니라, 디자인을 더해 제품이 더 돋보이는 상세페이지를 만들고 싶었습니다. 메인 리뉴얼 사이트의 분위기를 그대로 이어 가면서 큰 타이포와 넉넉한 여백으로 차분하고 고급스럽게 잡았습니다. 매트리스 구조는 한 겹씩 열어 보듯 단계별로 보여 주고, 모델명과 사양, 사진은 모두 실제 제품 기준으로 넣었습니다. SIMMONS를 주제로 한 비공식 작업입니다.",
      tools:["Cursor","Claude Code"],
      stack:["HTML","CSS","JavaScript","GitHub","Vercel"],
-     period:["2026.10.08 – 10.13","작업 3일"],
+     period:"2026.10.08 – 10.13",
      video:{src:"assets/images/ai-sdetail-demo.mp4",poster:"assets/images/ai-sdetail-poster.jpg",frame:"browser",host:"dudrud0642-beep.github.io/portfolio_detail_pages/simmons",label:"SIMMONS 상세페이지를 둘러보는 화면 녹화"},
      lab:{before:"assets/images/ai-sdetail-official-pc.jpg",after:"assets/images/ai-sdetail-final-pc.jpg",l:"기존 상세페이지",r:"리디자인 · 10/13",alt:"SIMMONS 브리짓 상세페이지 스프링 구조 부분",wide:true,w:1440,h:900},
      labDesc:"기존 공식몰 상세페이지는 제품 사진과 설명 글이 전부라 브리짓만의 장점이 잘 보이지 않았습니다. 제품 소개부터 디자인 디테일, 매트리스 구조, 하룻밤 사용 흐름, 옵션과 제품 정보까지 스크롤을 따라 차례대로 읽히도록 상세페이지 전체를 다시 구성했습니다. 비교 화면은 같은 스프링 내용을 담은 부분입니다.",
@@ -74,17 +74,17 @@
      desc:"공식 상세이미지의 문구와 수치는 그대로 두고, 완전히 다른 느낌의 상세이미지를 만드는 것이 목표였습니다. 아이보리와 세이지 톤으로 더 트렌디하게 바꾸고, 제품 이미지와 제품명, 꼭 알아야 할 내용이 한눈에 들어오도록 포인트를 줬습니다. 통이미지 상세는 AI가 문구와 수치를 읽지 못해서, 요즘은 AI 검색에 잡히도록 상세를 HTML로 만드는 추세입니다. 그래서 같은 디자인을 이미지가 아닌 HTML로 다시 만들었습니다. 비플레인을 주제로 한 비공식 리디자인 작업입니다.",
      tools:["Cursor","Claude Code"],
      stack:["HTML","CSS","GitHub","Vercel"],
-     period:["2026.10.13 – 10.19","작업 2일"],
+     period:"2026.10.13 – 10.19",
      video:{src:"assets/images/ai-beplain-demo.mp4",poster:"assets/images/ai-beplain-poster.jpg",label:"비플레인 HTML 상세를 휴대폰 화면으로 내려 보는 녹화"},
      lab:{before:"assets/images/ai-beplain-ph-before.jpg",after:"assets/images/ai-beplain-ph-after.webp",l:"기존 상세이미지",r:"HTML 리디자인 · 10/19",alt:"비플레인 녹두 클렌징폼 약산성 pH 섹션",w:860,h:1540},
-     labDesc:"기존 상세이미지는 내용은 충실하지만 그래프와 강조 문구가 흩어져 있고, 숫자와 그래프는 모두 멈춰 있는 이미지였습니다. 같은 문구와 수치를 카드 형태로 다시 정리하고, 판매 수치와 체크리스트, 그래프, pH처럼 움직이면 더 잘 이해되는 부분은 움직이도록 만들었습니다. 비교 화면은 HTML로 다시 만든 상세에서 pH 막대 위 표시가 녹두폼의 pH 6으로 움직이는 약산성 부분입니다.",
+     labDesc:"기존 상세이미지는 내용은 충실하지만 그래프와 강조 문구가 흩어져 있고, 숫자와 그래프는 모두 멈춰 있는 이미지였습니다. 같은 문구와 수치를 카드 형태로 다시 정리하고, 판매 수치와 체크리스트, 그래프, pH처럼 움직이면 더 잘 이해되는 부분은 움직이도록 만들었습니다. 비교 화면은 HTML로 다시 만든 상세에서 pH 막대 위 표시가 녹두폼의 pH\u00a06으로 움직이는 약산성 부분입니다.",
      ai:["섹션 구성과 레이아웃 초안","콘셉트에 맞춘 상세이미지 디자인","그래프·움직임 시각 자료 제작","같은 디자인의 HTML 상세 변환"],
      me:["리디자인 제품 선정과 방향 결정","디자인 방향성과 콘셉트 결정","기획과 요구사항 정리","AI 검색을 위한 HTML 전환 결정","최종 결과물 검수"]},
     {k:"pet",name:"멍냥 환생 연구소",en:"Web Service",url:"https://pet-profile-five.vercel.app/",
      desc:"“우리 아이가 사람으로 태어난다면 어떤 사람이 될까?”라는 궁금증에서 시작한 재미 콘텐츠입니다. 질문 5개에 답하면 반려동물의 인간 프로필이 나옵니다. 크림 배경에 노란 포인트, 검정 대신 갈색 외곽선을 써서 부드럽고 귀여운 스티커 느낌으로 만들었습니다.",
      tools:["Claude Code"],
      stack:["Vue 3","Vite","GitHub","Vercel"],
-     period:["2026.09.01","작업 1일"],
+     period:"2026.09.01",
      video:{src:"assets/images/ai-pet-demo.mp4",poster:"assets/images/ai-pet-landing.png",label:"멍냥 환생 연구소를 처음부터 결과까지 사용하는 화면 녹화"},
      lab:{before:"assets/images/ai-pet-wire-landing.png",after:"assets/images/ai-pet-landing.png",l:"기획서 와이어프레임",r:"완성 화면",alt:"멍냥 환생 연구소 첫 화면"},
      labDesc:"질문 흐름과 결과 카드 구성은 기획서로 먼저 정리했습니다. 비교 화면은 기획서에 글자로 그려 둔 와이어프레임과 완성된 첫 화면입니다. 와이어프레임의 구성은 살리면서, 캐릭터와 카드, 버튼은 정해 둔 스티커 느낌에 맞춰 피드백으로 다듬었습니다.",
@@ -92,11 +92,6 @@
      me:["서비스 콘셉트 기획","질문 흐름 결정","디자인 방향과 컬러 콘셉트 결정","설계안 검토와 수정 요청","최종 결과물 검수"]}
   ];
 
-  /* 설명 문장: 갈라지면 어색한 단위는 한 덩어리로 (짧은 묶음만 — 긴 묶음은 줄을 일찍 넘겨 억지 줄바꿈처럼 보임) */
-  const UNITS=['THE ART OF GOOD SLEEP','SIMMONS 공식몰','pH 6','pH 막대','질문 5개','서울 25개 구','세 가지 기준','도서관·문화재단 소식','검색·목록','흰 배경','큰 타이포','첫 화면','한 화면','한 겹씩','다른 구','블랙 콘셉트','매장 안내','매트리스 구조','디자인 디테일','하룻밤 사용 흐름','제품 소개','제품 정보','스프링 내용','설명 글','공식 상세이미지','세이지 톤','제품 이미지','강조 문구','카드 형태','판매 수치','비공식 리뉴얼','비공식 리디자인','비공식 작업','메인 리뉴얼 사이트','실제 제품 기준','재미 콘텐츠','인간 프로필','크림 배경','노란 포인트','갈색 외곽선','스티커 느낌','글자 크기','폰트 크기','제목 굵기','글자 굵기','기본 구성','디자인 방향','대시보드 형식','기관 공식 공지','기관 공지','실제 정보','실제 프로그램','공공예약 정보','실제 서비스','비교 화면','결과 카드','질문 흐름','지도 표현','샘플 데이터','요약 숫자','2주 일정','AI 검색','통이미지 상세','만드는 것','보이는 것','볼 수'];
-  const LI_UNITS=['HTML·CSS·JS','Vue 3','UI 명세서','섹션 구성','레이아웃 초안','카피 초안','화면 디자인','상세페이지 디자인','상세이미지 디자인','대시보드 디자인','반응형 수정','이미지 압축','코드 정리','매트리스 구조도','시각 자료','프롬프트 작성','레퍼런스 리서치','디자인 방향','디자인 방향성','디테일 검수','이미지 선정','디자인 수정','반복 피드백','요구사항 정리','문구 수정','디테일한 상세 작업','모바일 검수','수정 요청','결과물 검수','제품 선정','방향 결정','설계 초안','결과 카드','서비스 콘셉트','질문 흐름','컬러 콘셉트','설계안 검토','프로그램 수집','데이터 정리','자동 갱신 기능','반응형 점검','오류 수정','서비스 아이디어','디자인 콘셉트','대시보드 형식','로고·주색·폰트','시안 선택','기관 정보','데이터 기준','모바일·태블릿','사용성 검수','폭·여백·폰트','기준 수립','제품·공간 이미지','폰트 크기·가독성','HTML 상세','HTML 전환','AI 검색','그래프·움직임'];
-  const wrapUnits=list=>txt=>{list.forEach(u=>{txt=txt.split(u).join('<span class="nw">'+u+'</span>')});return txt};
-  const nwu=wrapUnits(LI_UNITS), units=wrapUnits(UNITS);
 
   /* ---------- GNB 활성 표시 ---------- */
   const navBtns=$$('.gnb button');
@@ -164,7 +159,8 @@
       ? '<div class="browser-video"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>'+w.video.host+'</span></div>'+v+'</div>'
       : '<div class="phone-video">'+v+'</div>';
   };
-  const toolList=a=>a.map(t=>'<span class="nw">'+t+'</span>').join('&nbsp;· ');
+  const keep=t=>t.replace(/ /g,'&nbsp;');
+  const toolList=a=>a.map(keep).join('&nbsp;· ');
   const siteBtn=w=>w.url
     ? `<a class="btn-site" href="${w.url}" target="_blank" rel="noopener">${w.btn||'사이트 보기'} <span aria-hidden="true">↗</span></a>`
     : '';
@@ -173,8 +169,8 @@
       <div class="sc-t">
         <div class="sc-meta"><span class="eyebrow">${w.en}</span></div>
         <h3>${w.name}</h3>
-        <p class="sc-desc">${units(w.desc)}</p>
-        ${(w.tools||w.stack)?'<dl class="sc-tools">'+(w.tools?'<div class="ai"><dt>AI</dt><dd>'+toolList(w.tools)+'</dd></div>':'')+(w.stack?'<div><dt>Stack</dt><dd>'+toolList(w.stack)+'</dd></div>':'')+(w.period?'<div><dt>Period</dt><dd>'+toolList(w.period)+'</dd></div>':'')+'</dl>':''}
+        <p class="sc-desc">${w.desc}</p>
+        ${(w.tools||w.stack)?'<dl class="sc-tools">'+(w.tools?'<div class="ai"><dt>AI</dt><dd>'+toolList(w.tools)+'</dd></div>':'')+(w.stack?'<div><dt>Stack</dt><dd>'+toolList(w.stack)+'</dd></div>':'')+(w.period?'<div><dt>Period</dt><dd>'+keep(w.period)+'</dd></div>':'')+'</dl>':''}
         <ol class="steps"><li><b>1</b>Prompt</li><li><b>2</b>Design</li><li><b>3</b>Code</li><li><b>4</b>Launch</li></ol>
         ${w.url?'<div class="sc-foot">'+siteBtn(w)+'</div>':''}
       </div>
@@ -220,10 +216,10 @@
     $('#memo').innerHTML=`
       <div class="sc-meta"><span class="eyebrow">${w.en}</span></div>
       <h3>${w.name}</h3>
-      <p>${units(w.labDesc||w.desc)}</p>
+      <p>${w.labDesc||w.desc}</p>
       <div class="mcols">
-        <div class="me"><h4>내가 맡은 일</h4><ul>${w.me.map(x=>`<li>${nwu(x)}</li>`).join('')}</ul></div>
-        <div><h4>AI가 맡은 일</h4><ul>${w.ai.map(x=>`<li>${nwu(x)}</li>`).join('')}</ul></div>
+        <div class="me"><h4>내가 맡은 일</h4><ul>${w.me.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+        <div><h4>AI가 맡은 일</h4><ul>${w.ai.map(x=>`<li>${x}</li>`).join('')}</ul></div>
       </div>
       ${siteBtn(w)}`;
   }
