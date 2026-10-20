@@ -1,12 +1,12 @@
 /* 이영경 포트폴리오 (2026 리뉴얼) */
 /* 기본 한글 → Pretendard, 포인트 한글 → IBM Plex Sans KR, 영문/숫자 → IBM Plex Sans KR 라틴 (unicode-range로 분리) */
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Regular.page.woff2?v=261020a") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Medium.page.woff2?v=261020a") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-SemiBold.page.woff2?v=261020a") format("woff2");font-weight:600;font-display:swap}
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Bold.page.woff2?v=261020a") format("woff2");font-weight:700;font-display:swap}
-@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Medium.page.woff2?v=261020a") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-SemiBold.page.woff2?v=261020a") format("woff2");font-weight:600;font-display:swap}
-@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Bold.page.woff2?v=261020a") format("woff2");font-weight:700 800;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Regular.page.woff2?v=261020b") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Medium.page.woff2?v=261020b") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-SemiBold.page.woff2?v=261020b") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Bold.page.woff2?v=261020b") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Medium.page.woff2?v=261020b") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-SemiBold.page.woff2?v=261020b") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Bold.page.woff2?v=261020b") format("woff2");font-weight:700 800;font-display:swap}
 @font-face{font-family:"PlexLatin";src:url("../fonts/IBMPlexSansKR-Regular.latin.woff2") format("woff2");font-weight:300 400;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
 @font-face{font-family:"PlexLatin";src:url("../fonts/IBMPlexSansKR-Medium.latin.woff2") format("woff2");font-weight:500;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
 @font-face{font-family:"PlexLatin";src:url("../fonts/IBMPlexSansKR-SemiBold.latin.woff2") format("woff2");font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
