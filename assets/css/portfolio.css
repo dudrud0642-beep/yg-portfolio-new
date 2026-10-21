@@ -1,12 +1,12 @@
 /* 이영경 포트폴리오 (2026 리뉴얼) */
 /* 기본 한글 → Pretendard, 포인트 한글 → IBM Plex Sans KR, 영문/숫자 → IBM Plex Sans KR 라틴 (unicode-range로 분리) */
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Regular.page.woff2?v=261021a") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Medium.page.woff2?v=261021a") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-SemiBold.page.woff2?v=261021a") format("woff2");font-weight:600;font-display:swap}
-@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Bold.page.woff2?v=261021a") format("woff2");font-weight:700;font-display:swap}
-@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Medium.page.woff2?v=261021a") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-SemiBold.page.woff2?v=261021a") format("woff2");font-weight:600;font-display:swap}
-@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Bold.page.woff2?v=261021a") format("woff2");font-weight:700 800;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Regular.page.woff2?v=261021b") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Medium.page.woff2?v=261021b") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-SemiBold.page.woff2?v=261021b") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../fonts/Pretendard-Bold.page.woff2?v=261021b") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Medium.page.woff2?v=261021b") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-SemiBold.page.woff2?v=261021b") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"PlexKR";src:url("../fonts/IBMPlexSansKR-Bold.page.woff2?v=261021b") format("woff2");font-weight:700 800;font-display:swap}
 @font-face{font-family:"PlexLatin";src:url("../fonts/IBMPlexSansKR-Regular.latin.woff2") format("woff2");font-weight:300 400;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
 @font-face{font-family:"PlexLatin";src:url("../fonts/IBMPlexSansKR-Medium.latin.woff2") format("woff2");font-weight:500;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
 @font-face{font-family:"PlexLatin";src:url("../fonts/IBMPlexSansKR-SemiBold.latin.woff2") format("woff2");font-weight:600;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
@@ -239,13 +239,11 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .handle span{position:absolute;top:50%;left:50%;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;font-size:14px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .handle:focus-visible{outline:none}
 .handle:focus-visible span{outline:2px solid var(--pink);outline-offset:3px}
-/* 휴대폰: 비교 화면을 살짝 어둡게 깔아 두고(라벨·손잡이는 그대로), 손으로 끌면 밝아짐 */
-@media (max-width:600px){
-  .before::after,.after::after{content:"";position:absolute;inset:0;z-index:1;background:rgba(0,0,0,.38);pointer-events:none;transition:opacity .45s var(--ease)}
-  .after{z-index:1}
-  .cmp.lit .before::after,.cmp.lit .after::after{opacity:0}
-  .handle{z-index:3}
-}
+/* 비교 화면을 살짝 어둡게 깔아 두고(라벨·손잡이는 그대로), 끌거나 누르면 밝아짐 */
+.before::after,.after::after{content:"";position:absolute;inset:0;z-index:1;background:rgba(0,0,0,.38);pointer-events:none;transition:opacity .45s var(--ease)}
+.after{z-index:1}
+.cmp.lit .before::after,.cmp.lit .after::after{opacity:0}
+.handle{z-index:3}
 .memo{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(24px,2.6vw,36px);display:flex;flex-direction:column;gap:18px;min-width:0}
 .memo h3{font-family:var(--f-point);font-size:clamp(22px,1.8vw,28px);font-weight:600;letter-spacing:-.03em}
 .memo > p{color:var(--text2);font-size:var(--fs-body);line-height:1.85}

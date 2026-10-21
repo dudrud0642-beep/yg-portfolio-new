@@ -49,10 +49,10 @@
      video:{src:"assets/images/ai-moa-demo.mp4",poster:"assets/images/ai-moa-poster.jpg",frame:"browser",host:"dudrud0642-beep.github.io/kids_program_portfolio",label:"모아놀자 대시보드에서 프로그램을 찾아보는 화면 녹화"},
      lab:{before:"assets/images/ai-moa-v0-first.webp",after:"assets/images/ai-moa-final.webp",l:"AI 첫 결과 · 10/13",r:"완성 · 10/19",alt:"모아놀자 도봉구 대시보드 첫 화면",wide:true,w:1536,h:864},
      labDesc:"처음 결과는 샘플 데이터를 넣은 평범한 목록형 페이지라, 스크롤을 한참 내려야 하고 다른 사이트와 다른 점이 없었습니다. 지도와 요약 숫자, 2주 일정이 한 화면에 보이는 대시보드로 방향을 바꾸고, 기관 공지에서 모은 실제 프로그램으로 채웠습니다. 주색과 로고, 글자 굵기, 지도 표현도 하나씩 다시 정했고, 휴대폰과 태블릿에서도 편하게 쓰이는지 직접 써 보며 수정을 요청했습니다.",
-     ai:["기관별 프로그램 수집과 데이터 정리","콘셉트에 맞춘 대시보드 디자인","HTML·CSS·JS 퍼블리싱","자동 갱신 기능 개발","반응형 점검과 오류 수정"],
-     me:["서비스 아이디어와 기획","디자인 콘셉트와 대시보드 형식 결정","로고·주색·폰트 시안 선택","실제 기관 정보만 쓰는 데이터 기준","모바일·태블릿 사용성 검수와 수정 요청","최종 결과물 검수"]},
+     ai:["기관별 프로그램 수집과 데이터 정리","컨셉에 맞춘 대시보드 디자인","HTML·CSS·JS 퍼블리싱","자동 갱신 기능 개발","반응형 점검과 오류 수정"],
+     me:["서비스 아이디어와 기획","디자인 컨셉과 대시보드 형식 결정","로고·주색·폰트 시안 선택","실제 기관 정보만 쓰는 데이터 기준","모바일·태블릿 사용성 검수와 수정 요청","최종 결과물 검수"]},
     {k:"simmons",name:"SIMMONS 사이트 리뉴얼",en:"Brand Website",url:"https://dudrud0642-beep.github.io/simmons_portfolio/",orig:"https://www.simmons.co.kr/",
-     desc:"기존 SIMMONS 공식몰이 흰 배경이라, 블랙 콘셉트의 모던하고 심플한 느낌으로 리뉴얼 방향을 잡았습니다. 글이 잘 읽히고 깔끔해 보이는 것을 가장 먼저 생각했고, 제품을 소개하는 섹션은 화면을 넓게 써서 큼직하게 보여 주고 싶었습니다. 글로만 되어 있던 게시판과 매장 안내는 카드로 바꿔 보기 편하게 정리했습니다. SIMMONS를 주제로 한 비공식 리뉴얼 작업입니다.",
+     desc:"기존 SIMMONS 공식몰이 흰 배경이라, 블랙 컨셉의 모던하고 심플한 느낌으로 리뉴얼 방향을 잡았습니다. 글이 잘 읽히고 깔끔해 보이는 것을 가장 먼저 생각했고, 제품을 소개하는 섹션은 화면을 넓게 써서 큼직하게 보여 주고 싶었습니다. 글로만 되어 있던 게시판과 매장 안내는 카드 형식으로 바꿔 보기 편하게 정리했습니다. SIMMONS를 주제로 한 비공식 리뉴얼 작업입니다.",
      tools:["Cursor","Claude Code","Codex"],
      stack:["HTML","CSS","JavaScript","GitHub","Vercel"],
      period:"2026.10.06 – 10.08",
@@ -60,7 +60,7 @@
      lab:{before:"assets/images/ai-simmons-v0-art.jpg",after:"assets/images/ai-simmons-final.jpg",l:"AI 첫 버전 · 10/6",r:"피드백 반영 후 · 10/7",alt:"SIMMONS 리뉴얼 THE ART OF GOOD SLEEP 섹션",wide:true,w:1440,h:900},
      labDesc:"AI가 처음 만든 버전은 기본 구성은 갖췄지만, 화면이 비어 보이고 글자 크기와 여백이 제각각이었습니다. 섹션마다 디자인 방향을 정해 구성을 바꾸고, 제목 굵기와 폰트 크기, 여백, 반응형을 하나씩 짚어 가며 지금 모습으로 다듬었습니다. 비교 화면의 THE ART OF GOOD SLEEP 섹션은 세 가지 기준이 한 화면에 보이도록 구성을 새로 잡은 부분입니다.",
      ai:["섹션 구성과 레이아웃 초안","방향에 맞춘 화면 디자인","HTML·CSS·JS 퍼블리싱","피드백 반영과 반응형 수정","이미지 압축과 코드 정리"],
-     me:["콘셉트 결정과 프롬프트 작성","레퍼런스 리서치와 디자인 방향 설정","폭·여백·폰트 기준 수립과 디테일 검수","제품·공간 이미지 선정","디자인 수정 요청과 반복 피드백","최종 결과물 검수"]},
+     me:["컨셉 결정과 프롬프트 작성","레퍼런스 리서치와 디자인 방향 설정","폭·여백·폰트 기준 수립과 디테일 검수","제품·공간 이미지 선정","디자인 수정 요청과 반복 피드백","최종 결과물 검수"]},
     {k:"sdetail",name:"SIMMONS 상세페이지",en:"Detail Page",url:"https://dudrud0642-beep.github.io/portfolio_detail_pages/simmons/",orig:"https://www.simmons.co.kr/product-detail?productNo=133689023",
      desc:"단순히 정보를 나열하는 상세페이지가 아니라, 디자인을 더해 제품이 더 돋보이는 상세페이지를 만들고 싶었습니다. 메인 리뉴얼 사이트의 분위기를 그대로 이어 가면서 큰 타이포와 넉넉한 여백으로 차분하고 고급스럽게 잡았습니다. 매트리스 구조는 한 겹씩 열어 보듯 단계별로 보여 주고, 모델명과 사양, 사진은 모두 실제 제품 기준으로 넣었습니다. SIMMONS를 주제로 한 비공식 작업입니다.",
      tools:["Cursor","Claude Code"],
@@ -69,28 +69,28 @@
      video:{src:"assets/images/ai-sdetail-demo.mp4",poster:"assets/images/ai-sdetail-poster.jpg",frame:"browser",host:"dudrud0642-beep.github.io/portfolio_detail_pages/simmons",label:"SIMMONS 상세페이지를 둘러보는 화면 녹화"},
      lab:{before:"assets/images/ai-sdetail-official-pc.jpg",after:"assets/images/ai-sdetail-final-pc.jpg",l:"기존 상세페이지",r:"리디자인 · 10/13",alt:"SIMMONS 브리짓 상세페이지 스프링 구조 부분",wide:true,w:1440,h:900},
      labDesc:"기존 공식몰 상세페이지는 제품 사진과 설명 글이 전부라 브리짓만의 장점이 잘 보이지 않았습니다. 제품 소개부터 디자인 디테일, 매트리스 구조, 하룻밤 사용 흐름, 옵션과 제품 정보까지 스크롤을 따라 차례대로 읽히도록 상세페이지 전체를 다시 구성했습니다. 비교 화면은 같은 스프링 내용을 담은 부분입니다.",
-     ai:["섹션 구성과 카피 초안","콘셉트에 맞춘 상세페이지 디자인","HTML·CSS·JS 퍼블리싱","매트리스 구조도 제작"],
-     me:["기획과 요구사항 정리","문구 수정과 섹션 구성 통일","디자인 방향성과 콘셉트 결정","폰트 크기·가독성 검수와 디테일한 상세 작업","모바일 검수와 수정 요청","최종 결과물 검수"]},
+     ai:["섹션 구성과 카피 초안","컨셉에 맞춘 상세페이지 디자인","HTML·CSS·JS 퍼블리싱","매트리스 구조도 제작"],
+     me:["기획과 요구사항 정리","문구 수정과 섹션 구성 통일","디자인 방향성과 컨셉 결정","폰트 크기·가독성 검수와 디테일한 상세 작업","모바일 검수와 수정 요청","최종 결과물 검수"]},
     {k:"beplain",name:"비플레인 상세이미지",en:"Detail Image",url:"https://dudrud0642-beep.github.io/portfolio_detail_pages/beplain_mungbean_foam/html/",btn:"상세페이지 보기",orig:"https://beplain.co.kr/shop/shopdetail.html?branduid=15",
-     desc:"공식 상세이미지의 문구와 수치는 그대로 두고, 완전히 다른 느낌의 상세이미지를 만드는 것이 목표였습니다. 아이보리와 세이지 톤으로 더 트렌디하게 바꾸고, 제품 이미지와 제품명, 꼭 알아야 할 내용이 한눈에 들어오도록 포인트를 줬습니다. 통이미지 상세는 AI가 문구와 수치를 읽지 못해서, 요즘은 AI 검색에 잡히도록 상세를 HTML로 만드는 추세입니다. 그래서 같은 디자인을 이미지가 아닌 HTML로 다시 만들었습니다. 비플레인을 주제로 한 비공식 리디자인 작업입니다.",
+     desc:"공식 상세이미지의 문구와 수치는 그대로 두고, 완전히 다른 느낌의 상세이미지를 만드는 것이 목표였습니다. 아이보리와 세이지 톤으로 더 트렌디하게 바꾸고, 제품 이미지와 제품명, 꼭 알아야 할 내용이 한눈에 들어오도록 포인트를 줬습니다. 통이미지 상세는 AI가 문구와 수치를 읽지 못합니다. 요즘은 AI 검색에 잡히도록 상세를 HTML로 만드는 추세여서 HTML로 작업했습니다. 비플레인을 주제로 한 비공식 리디자인 작업입니다.",
      tools:["Cursor","Claude Code"],
-     stack:["HTML","CSS","GitHub","Vercel"],
+     stack:["HTML","CSS","JavaScript","GitHub","Vercel"],
      period:"2026.10.13 – 10.19",
      video:{src:"assets/images/ai-beplain-demo.mp4",poster:"assets/images/ai-beplain-poster.jpg",label:"비플레인 HTML 상세를 휴대폰 화면으로 내려 보는 녹화"},
      lab:{before:"assets/images/ai-beplain-ph-before.jpg",after:"assets/images/ai-beplain-ph-after.webp",l:"기존 상세이미지",r:"HTML 리디자인 · 10/19",alt:"비플레인 녹두 클렌징폼 약산성 pH 섹션",w:860,h:1540},
      labDesc:"기존 상세이미지는 내용은 충실하지만 그래프와 강조 문구가 흩어져 있고, 숫자와 그래프는 모두 멈춰 있는 이미지였습니다. 같은 문구와 수치를 카드 형태로 다시 정리하고, 판매 수치와 체크리스트, 그래프, pH처럼 움직이면 더 잘 이해되는 부분은 움직이도록 만들었습니다. 비교 화면은 HTML로 다시 만든 상세에서 pH 막대 위 표시가 녹두폼의 pH 6으로 움직이는 약산성 부분입니다.",
-     ai:["섹션 구성과 레이아웃 초안","콘셉트에 맞춘 상세이미지 디자인","그래프·움직임 시각 자료 제작","같은 디자인의 HTML 상세 변환"],
-     me:["리디자인 제품 선정과 방향 결정","디자인 방향성과 콘셉트 결정","기획과 요구사항 정리","AI 검색을 위한 HTML 전환 결정","최종 결과물 검수"]},
+     ai:["섹션 구성과 레이아웃 초안","컨셉에 맞춘 상세이미지 디자인","그래프·움직임 시각 자료 제작","같은 디자인의 HTML 상세 변환"],
+     me:["리디자인 제품 선정과 방향 결정","디자인 방향성과 컨셉 결정","기획과 요구사항 정리","AI 검색을 위한 HTML 전환 결정","최종 결과물 검수"]},
     {k:"pet",name:"멍냥 환생 연구소",en:"Web Service",url:"https://pet-profile-five.vercel.app/",
      desc:"“우리 아이가 사람으로 태어난다면 어떤 사람이 될까?”라는 궁금증에서 시작한 재미 콘텐츠입니다. 질문 5개에 답하면 반려동물의 인간 프로필이 나옵니다. 크림 배경에 노란 포인트, 검정 대신 갈색 외곽선을 써서 부드럽고 귀여운 스티커 느낌으로 만들었습니다.",
-     tools:["Claude Code"],
-     stack:["Vue 3","Vite","GitHub","Vercel"],
+     tools:["Cursor","Claude Code"],
+     stack:["HTML","CSS","JavaScript","Vue 3","Vite","GitHub","Vercel"],
      period:"2026.09.01",
      video:{src:"assets/images/ai-pet-demo.mp4",poster:"assets/images/ai-pet-landing.png",label:"멍냥 환생 연구소를 처음부터 결과까지 사용하는 화면 녹화"},
      lab:{before:"assets/images/ai-pet-wire-landing.png",after:"assets/images/ai-pet-landing.png",l:"기획서 와이어프레임",r:"완성 화면",alt:"멍냥 환생 연구소 첫 화면"},
      labDesc:"질문 흐름과 결과 카드 구성은 기획서로 먼저 정리했습니다. 비교 화면은 기획서에 글자로 그려 둔 와이어프레임과 완성된 첫 화면입니다. 와이어프레임의 구성은 살리면서, 캐릭터와 카드, 버튼은 정해 둔 스티커 느낌에 맞춰 피드백으로 다듬었습니다.",
-     ai:["UI 명세서와 화면 설계 초안","콘셉트에 맞춘 화면 디자인","Vue 3 화면과 결과 카드 개발"],
-     me:["서비스 콘셉트 기획","질문 흐름 결정","디자인 방향과 컬러 콘셉트 결정","설계안 검토와 수정 요청","최종 결과물 검수"]}
+     ai:["UI 명세서와 화면 설계 초안","컨셉에 맞춘 화면 디자인","Vue 3 화면과 결과 카드 개발"],
+     me:["서비스 컨셉 기획","질문 흐름 결정","디자인 방향과 컬러 컨셉 결정","설계안 검토와 수정 요청","최종 결과물 검수"]}
   ];
 
 
@@ -251,7 +251,7 @@
   let pos=50, drag=false, moved=false, sx=0, sy=0;
   const setPos=p=>{pos=Math.max(0,Math.min(100,p));cmp.style.setProperty('--pos',pos+'%');hd.setAttribute('aria-valuenow',String(Math.round(pos)))};
   const fromEvt=e=>{const r=cmp.getBoundingClientRect();setPos((e.clientX-r.left)/r.width*100)};
-  /* 휴대폰에서 어둡게 깔린 비교 화면은 끌거나 누르면 밝아짐(탭을 바꾸면 다시 어둡게) */
+  /* 어둡게 깔린 비교 화면은 끌거나 누르면 밝아짐(탭을 바꾸면 다시 어둡게) */
   const lit=()=>cmp.classList.add('lit');
   /* 손가락은 옆으로 끌기 시작해야 움직임 — 화면을 위아래로 스크롤하려다 손잡이가 튀거나 밝아지지 않게 */
   cmp.addEventListener('pointerdown',e=>{drag=true;sx=e.clientX;sy=e.clientY;moved=e.pointerType!=='touch';try{cmp.setPointerCapture(e.pointerId)}catch(err){}if(moved)fromEvt(e)});
