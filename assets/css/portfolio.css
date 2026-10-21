@@ -211,15 +211,12 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 .seg button[aria-selected="true"]{background:var(--pink);color:#000}
 /* 태블릿·모바일: 탭이 여러 줄로 쌓이지 않도록 한 줄 가로 스크롤 */
 @media (max-width:900px){.seg{display:flex;flex-wrap:nowrap;max-width:100%;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.seg::-webkit-scrollbar{display:none}.seg button{flex:none;padding:10px 12px}}
-/* 휴대폰: 작업 목록을 번호 붙은 세로 메뉴로 (한 상자 안에 한 줄씩, 고른 작업은 분홍) */
+/* 휴대폰: 글자만 있는 가로 탭(고른 작업은 밑줄). 옆으로 밀어 나머지를 보고, 더 있으면 오른쪽 끝을 흐리게 */
 @media (max-width:600px){
-  .seg{display:flex;flex-direction:column;gap:0;padding:6px;overflow:visible;border-radius:16px;margin-bottom:14px;counter-reset:seg}
-  .seg button{counter-increment:seg;display:flex;align-items:center;gap:12px;width:100%;text-align:left;white-space:normal;line-height:1.35;padding:14px 14px;font-size:15px;color:var(--ink);border-radius:0;box-shadow:inset 0 1px 0 var(--line)}
-  .seg button:first-child,.seg button[aria-selected="true"],.seg button[aria-selected="true"] + button{box-shadow:none}
-  .seg button::before{content:counter(seg,decimal-leading-zero);flex:none;min-width:20px;font-size:12px;font-weight:500;letter-spacing:.04em;color:var(--mute)}
-  .seg button::after{content:"›";flex:none;margin-left:auto;font-size:20px;line-height:1;color:var(--mute)}
-  .seg button[aria-selected="true"]{background:var(--pink);color:#000;border-radius:10px}
-  .seg button[aria-selected="true"]::before,.seg button[aria-selected="true"]::after{color:rgba(0,0,0,.55)}
+  .seg{gap:22px;padding:0;background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;margin-bottom:16px;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 40px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 40px),transparent)}
+  .seg.end{-webkit-mask-image:none;mask-image:none}
+  .seg button{padding:10px 0 12px;font-size:14px;font-weight:500;color:var(--soft);border-radius:0}
+  .seg button[aria-selected="true"]{background:none;color:var(--ink);font-weight:700;box-shadow:inset 0 -2px 0 var(--pink)}
 }
 .lab{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:12px}
 @media (max-width:1100px){.lab{grid-template-columns:minmax(0,1fr)}}

@@ -240,7 +240,12 @@
     if(changed){setPos(50);cmp.classList.remove('lit')}
     if(seg.scrollWidth>seg.clientWidth) seg.scrollTo({left:Math.max(0,b.offsetLeft-(seg.clientWidth-b.offsetWidth)/2),behavior:SMOOTH});
   });
+  /* 탭 줄을 옆으로 끝까지 밀면 오른쪽 흐림을 끔 */
+  const segEnd=()=>seg.classList.toggle('end',seg.scrollLeft+seg.clientWidth>=seg.scrollWidth-2);
+  seg.addEventListener('scroll',segEnd,{passive:true});
+  addEventListener('resize',segEnd);
   render();
+  segEnd();
 
   const cmp=$('#cmp'), hd=$('#handle');
   let pos=50, drag=false, moved=false, sx=0, sy=0;
