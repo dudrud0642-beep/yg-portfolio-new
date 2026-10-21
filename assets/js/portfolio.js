@@ -34,6 +34,7 @@
   ];
 
   /* ---- 새 AI 작업 (AI Works 카드와 AI Lab 탭이 이 순서를 같이 씀) ----
+     orig: 리디자인 전 기존(공식) 사이트 주소. 있으면 "기존 사이트 보기" 버튼(배경 없음)이 옆에 붙습니다.
      url: 사이트를 완성하면 주소를 넣으세요. 주소가 있는 작업에만 "사이트 보기" 버튼이 생깁니다.
      video: 카드 오른쪽 화면 녹화. frame:"browser"면 데스크톱 창 모양, 없으면 휴대폰 모양.
      lab: AI Lab 비교 이미지(before/after). wide는 가로형 데스크톱 화면이며 비교 영역 비율을 w:h에 맞춥니다.
@@ -47,10 +48,10 @@
      period:"2026.10.13 – 10.19",
      video:{src:"assets/images/ai-moa-demo.mp4",poster:"assets/images/ai-moa-poster.jpg",frame:"browser",host:"dudrud0642-beep.github.io/kids_program_portfolio",label:"모아놀자 대시보드에서 프로그램을 찾아보는 화면 녹화"},
      lab:{before:"assets/images/ai-moa-v0-first.webp",after:"assets/images/ai-moa-final.webp",l:"AI 첫 결과 · 10/13",r:"완성 · 10/19",alt:"모아놀자 도봉구 대시보드 첫 화면",wide:true,w:1536,h:864},
-     labDesc:"처음 결과는 샘플 데이터를 넣은 평범한 목록형 페이지라, 스크롤을 한참 내려야 하고 다른 사이트와 다른 점이 없었습니다. 그래서 지도와 요약 숫자, 2주 일정이 한 화면에 보이는 대시보드로 방향을 바꾸고, 기관 공지에서 모은 실제 프로그램으로 채웠습니다. 주색과 로고, 글자 굵기, 지도 표현도 하나씩 다시 정했고, 휴대폰과 태블릿에서도 편하게 쓰이는지 직접 써 보며 수정을 요청했습니다.",
+     labDesc:"처음 결과는 샘플 데이터를 넣은 평범한 목록형 페이지라, 스크롤을 한참 내려야 하고 다른 사이트와 다른 점이 없었습니다. 지도와 요약 숫자, 2주 일정이 한 화면에 보이는 대시보드로 방향을 바꾸고, 기관 공지에서 모은 실제 프로그램으로 채웠습니다. 주색과 로고, 글자 굵기, 지도 표현도 하나씩 다시 정했고, 휴대폰과 태블릿에서도 편하게 쓰이는지 직접 써 보며 수정을 요청했습니다.",
      ai:["기관별 프로그램 수집과 데이터 정리","콘셉트에 맞춘 대시보드 디자인","HTML·CSS·JS 퍼블리싱","자동 갱신 기능 개발","반응형 점검과 오류 수정"],
      me:["서비스 아이디어와 기획","디자인 콘셉트와 대시보드 형식 결정","로고·주색·폰트 시안 선택","실제 기관 정보만 쓰는 데이터 기준","모바일·태블릿 사용성 검수와 수정 요청","최종 결과물 검수"]},
-    {k:"simmons",name:"SIMMONS 사이트 리뉴얼",en:"Brand Website",url:"https://dudrud0642-beep.github.io/simmons_portfolio/",
+    {k:"simmons",name:"SIMMONS 사이트 리뉴얼",en:"Brand Website",url:"https://dudrud0642-beep.github.io/simmons_portfolio/",orig:"https://www.simmons.co.kr/",
      desc:"기존 SIMMONS 공식몰이 흰 배경이라, 블랙 콘셉트의 모던하고 심플한 느낌으로 리뉴얼 방향을 잡았습니다. 글이 잘 읽히고 깔끔해 보이는 것을 가장 먼저 생각했고, 제품을 소개하는 섹션은 화면을 넓게 써서 큼직하게 보여 주고 싶었습니다. 글로만 되어 있던 게시판과 매장 안내는 카드로 바꿔 보기 편하게 정리했습니다. SIMMONS를 주제로 한 비공식 리뉴얼 작업입니다.",
      tools:["Cursor","Claude Code","Codex"],
      stack:["HTML","CSS","JavaScript","GitHub","Vercel"],
@@ -60,7 +61,7 @@
      labDesc:"AI가 처음 만든 버전은 기본 구성은 갖췄지만, 화면이 비어 보이고 글자 크기와 여백이 제각각이었습니다. 섹션마다 디자인 방향을 정해 구성을 바꾸고, 제목 굵기와 폰트 크기, 여백, 반응형을 하나씩 짚어 가며 지금 모습으로 다듬었습니다. 비교 화면의 THE ART OF GOOD SLEEP 섹션은 세 가지 기준이 한 화면에 보이도록 구성을 새로 잡은 부분입니다.",
      ai:["섹션 구성과 레이아웃 초안","방향에 맞춘 화면 디자인","HTML·CSS·JS 퍼블리싱","피드백 반영과 반응형 수정","이미지 압축과 코드 정리"],
      me:["콘셉트 결정과 프롬프트 작성","레퍼런스 리서치와 디자인 방향 설정","폭·여백·폰트 기준 수립과 디테일 검수","제품·공간 이미지 선정","디자인 수정 요청과 반복 피드백","최종 결과물 검수"]},
-    {k:"sdetail",name:"SIMMONS 상세페이지",en:"Detail Page",url:"https://dudrud0642-beep.github.io/portfolio_detail_pages/simmons/",
+    {k:"sdetail",name:"SIMMONS 상세페이지",en:"Detail Page",url:"https://dudrud0642-beep.github.io/portfolio_detail_pages/simmons/",orig:"https://www.simmons.co.kr/product-detail?productNo=133689023",
      desc:"단순히 정보를 나열하는 상세페이지가 아니라, 디자인을 더해 제품이 더 돋보이는 상세페이지를 만들고 싶었습니다. 메인 리뉴얼 사이트의 분위기를 그대로 이어 가면서 큰 타이포와 넉넉한 여백으로 차분하고 고급스럽게 잡았습니다. 매트리스 구조는 한 겹씩 열어 보듯 단계별로 보여 주고, 모델명과 사양, 사진은 모두 실제 제품 기준으로 넣었습니다. SIMMONS를 주제로 한 비공식 작업입니다.",
      tools:["Cursor","Claude Code"],
      stack:["HTML","CSS","JavaScript","GitHub","Vercel"],
@@ -70,7 +71,7 @@
      labDesc:"기존 공식몰 상세페이지는 제품 사진과 설명 글이 전부라 브리짓만의 장점이 잘 보이지 않았습니다. 제품 소개부터 디자인 디테일, 매트리스 구조, 하룻밤 사용 흐름, 옵션과 제품 정보까지 스크롤을 따라 차례대로 읽히도록 상세페이지 전체를 다시 구성했습니다. 비교 화면은 같은 스프링 내용을 담은 부분입니다.",
      ai:["섹션 구성과 카피 초안","콘셉트에 맞춘 상세페이지 디자인","HTML·CSS·JS 퍼블리싱","매트리스 구조도 제작"],
      me:["기획과 요구사항 정리","문구 수정과 섹션 구성 통일","디자인 방향성과 콘셉트 결정","폰트 크기·가독성 검수와 디테일한 상세 작업","모바일 검수와 수정 요청","최종 결과물 검수"]},
-    {k:"beplain",name:"비플레인 상세이미지",en:"Detail Image",url:"https://dudrud0642-beep.github.io/portfolio_detail_pages/beplain_mungbean_foam/html/",btn:"상세페이지 보기",
+    {k:"beplain",name:"비플레인 상세이미지",en:"Detail Image",url:"https://dudrud0642-beep.github.io/portfolio_detail_pages/beplain_mungbean_foam/html/",btn:"상세페이지 보기",orig:"https://beplain.co.kr/shop/shopdetail.html?branduid=15",
      desc:"공식 상세이미지의 문구와 수치는 그대로 두고, 완전히 다른 느낌의 상세이미지를 만드는 것이 목표였습니다. 아이보리와 세이지 톤으로 더 트렌디하게 바꾸고, 제품 이미지와 제품명, 꼭 알아야 할 내용이 한눈에 들어오도록 포인트를 줬습니다. 통이미지 상세는 AI가 문구와 수치를 읽지 못해서, 요즘은 AI 검색에 잡히도록 상세를 HTML로 만드는 추세입니다. 그래서 같은 디자인을 이미지가 아닌 HTML로 다시 만들었습니다. 비플레인을 주제로 한 비공식 리디자인 작업입니다.",
      tools:["Cursor","Claude Code"],
      stack:["HTML","CSS","GitHub","Vercel"],
@@ -164,6 +165,9 @@
   const siteBtn=w=>w.url
     ? `<a class="btn-site" href="${w.url}" target="_blank" rel="noopener">${w.btn||'사이트 보기'} <span aria-hidden="true">↗</span></a>`
     : '';
+  const origBtn=w=>w.orig
+    ? `<a class="btn-site ghost" href="${w.orig}" target="_blank" rel="noopener">기존 사이트 보기 <span aria-hidden="true">↗</span></a>`
+    : '';
   $('#stack').innerHTML=AI.map((w,i)=>`
     <article class="sc" style="--i:${i}">
       <div class="sc-t">
@@ -172,7 +176,7 @@
         <p class="sc-desc">${w.desc}</p>
         ${(w.tools||w.stack)?'<dl class="sc-tools">'+(w.tools?'<div class="ai"><dt>AI</dt><dd>'+toolList(w.tools)+'</dd></div>':'')+(w.stack?'<div><dt>Stack</dt><dd>'+toolList(w.stack)+'</dd></div>':'')+(w.period?'<div><dt>Period</dt><dd>'+keep(w.period)+'</dd></div>':'')+'</dl>':''}
         <ol class="steps"><li><b>1</b>Prompt</li><li><b>2</b>Design</li><li><b>3</b>Code</li><li><b>4</b>Launch</li></ol>
-        ${w.url?'<div class="sc-foot">'+siteBtn(w)+'</div>':''}
+        ${w.url?'<div class="sc-foot">'+siteBtn(w)+origBtn(w)+'</div>':''}
       </div>
       <div class="sc-v">${visual(w)}</div>
     </article>`).join('');
@@ -227,7 +231,7 @@
         <div class="me"><h4>내가 맡은 일</h4><ul>${w.me.map(x=>`<li>${x}</li>`).join('')}</ul></div>
         <div><h4>AI가 맡은 일</h4><ul>${w.ai.map(x=>`<li>${x}</li>`).join('')}</ul></div>
       </div>
-      ${siteBtn(w)}`;
+      ${w.url?'<div class="memo-foot">'+siteBtn(w)+origBtn(w)+'</div>':''}`;
   }
   seg.addEventListener('click',e=>{
     const b=e.target.closest('button');if(!b)return;
