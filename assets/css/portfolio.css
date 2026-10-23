@@ -312,6 +312,7 @@ button,.btn-site,.copy,.hd-cta,.tgroups span,.lbl,.job-when b,.about-disp .nw{wh
 a.cc:hover{border-color:rgba(255,201,220,.5)}
 a.cc:hover .arr{transform:translate(3px,-3px);color:var(--pink)}
 .cc-mail .cc-val{user-select:all;white-space:nowrap}
+.cc-tel .cc-val{white-space:nowrap}
 /* 칸이 좁은 901~1100px·휴대폰: 이름표는 위 줄, 주소와 버튼은 아래 한 줄 */
 @media (min-width:901px) and (max-width:1100px){.cc{grid-template-columns:minmax(0,1fr) auto}.cc .tl{grid-column:1/-1}}
 .copy{border:1px solid rgba(255,255,255,.35);background:transparent;color:var(--ink);border-radius:999px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;transition:background .3s,color .3s,border-color .3s}
